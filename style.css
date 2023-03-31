@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.logo{
+    width: 154px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.wide{
+    height: 309px;
+    position: relative; /*위치 상대적으로*/
+    background-color: #006FFF;
+    text-align: center; /*텍스트의 정렬 : 가운데 vs 이미지는 텍스트가 아닌데...*/
+    background-image: url("images/visual-wide.png"); /* 배경-이미지 "url(경로/이름.형식)*/
+    background-repeat: no-repeat;                    /* 배경-반복 : 안함 */ 
+    background-position: center center;              /* 배경-위치 : (공간에서) 수평 수직*/
+
+    /* background: #006FFF url("images/visual-wide.png") no-repeat center center; */
+}
+#model{
+    position: absolute;    /* 위치 : (상대적인 기준점으로부터) 절대위치*/
+    bottom: 0;             /* 아래 : 0*/                                                
+}
+.menu{
+    background-color: black;
+}
+.menu ul{
+    list-style-type: none; /* 목록-스타일-종류 : 없음(사각형,채워진 원, 빈원)*/
+    display: flex; /* 표시 : 플렉스(유연한 구조)*/
+    justify-content: center;    
+
+    /* display: flex; /*글자 나란히 텍스트 가운데 정렬*/
+    /* justify-content: center; */
+}
+.menu ul li, .sub_menu ul li{
+    padding: 20px 0;
+    margin: 0 20px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.price, .casting{
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.price th, .casting th{
+    width : 200px
+}
+.price caption, .casting caption{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top:  30px;
+    margin-bottom: 20px;
+}
+.price, .price th, .price td, .casting, .casting th, .casting td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.price th, .price td, .casting th, .casting td {
+    padding: 10px 20px;
+}
+
+.sub_menu{
+    background-color: #fafafa;
+    border: 1px solid black;
+    margin: 50px 0 0 0;
+}
+.sub_menu ul{
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center;    
+}
+.sub_menu ul li{
+    padding: 20px ;
+}
+.sub_menu a{
+    color: #666666;
+    text-decoration: none;
+    font-size: 13px;
+}
+.site_info {
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+.site_info p {
+    color: white;
+    margin: 20px 0;
+}
